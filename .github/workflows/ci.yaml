@@ -21,7 +21,9 @@ jobs:
           node-version: '22'
 
       - name: Install dependencies
-        run: npm install
+        run: |
+          cd app-frontend
+          npm install
 
       - name: Frontend Tests (app-frontend)
         run: |
