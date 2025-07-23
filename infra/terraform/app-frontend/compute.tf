@@ -6,18 +6,15 @@ data "oci_core_images" "ubuntu" {
   compartment_id           = var.compartment_ocid
   operating_system         = "Canonical Ubuntu"
   operating_system_version = "22.04"
-  shape                    = "VM.Standard.A1.Flex"
+  shape                    = "VM.Standard.E2.1.Micro"
+  sort_by                  = "TIMECREATED"
+  sort_order               = "DESC"
 }
 
 resource "oci_core_instance" "bookinfix_vm" {
   availability_domain = data.oci_identity_availability_domains.ads.availability_domains[0].name
   compartment_id      = var.compartment_ocid
-  shape               = "VM.Standard.A1.Flex"
-
-  shape_config {
-    ocpus         = 1
-    memory_in_gbs = 6
-  }
+  shape               = "VM.Standard.E2.1.Micro" # Instância AMD Always Free
 
   display_name = "bookinfix-vm"
 

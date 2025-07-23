@@ -26,7 +26,7 @@ resource "oci_core_security_list" "sec_list" {
   vcn_id         = oci_core_virtual_network.bookinfix_vcn.id
 
   ingress_security_rules {
-    protocol = "6" # TCP
+    protocol = "6"
     source   = "0.0.0.0/0"
     tcp_options {
       min = 22
