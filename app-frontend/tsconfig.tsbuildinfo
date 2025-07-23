@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/approuter.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/layouts/resolvelayout.tsx","./src/layouts/base/basetemplate.test.tsx","./src/layouts/base/index.tsx","./src/layouts/common/index.tsx","./src/pages/landing/index.tsx","./src/types/user-type.ts","./jest.setup.ts"],"version":"5.8.3"}

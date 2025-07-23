@@ -1,0 +1,1 @@
+export type UserType = "common" | "enterprise" | "enterprise-admin" | "any";
