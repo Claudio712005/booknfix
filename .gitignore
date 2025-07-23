@@ -2,3 +2,23 @@
 
 *node_modules
 *dist
+
+*terraform.tfstate
+*terraform.tfstate.backup
+
+*.tfvars
+
+*crash.log
+
+*.terraform/
+
+*override.tf
+*override.tf.json
+*_override.tf
+*_override.tf.json
+
+*.auto.tfvars
+
+*.pem
+
+*.env
