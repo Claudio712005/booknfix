@@ -1,0 +1,9 @@
+# name: CD - Deploy Frontend (BooknFix)
+# on:
+#   push:
+#     branches:
+#       - main
+#   pull_request:
+#     branches:
+#       - main
+  
