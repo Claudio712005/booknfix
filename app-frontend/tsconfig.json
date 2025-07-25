@@ -10,7 +10,7 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "module": "ESNext",
-    "moduleResolution": "bundler",
+    "moduleResolution": "bundler", // ou "node" se houver problema
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,

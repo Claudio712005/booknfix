@@ -1,9 +1,7 @@
 import { render } from '@testing-library/react';
-import { ChakraProvider, defaultSystem } from '@chakra-ui/react';
+import { PrimeReactProvider } from 'primereact/api';
 
 
 export function renderWithProviders(ui: React.ReactElement) {
-    return render(<ChakraProvider
-        value={defaultSystem}
-    >{ui}</ChakraProvider>);
+    return render(<PrimeReactProvider>{ui}</PrimeReactProvider>);
 }
