@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css'
 import { appRouter } from './appRouter'
-import { withLayout } from "./layouts/resolveLayout";
+import { LayoutWrapper } from "./layouts/LayoutWrapper";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
             <Route
               key={route.path}
               path={route.path}
-              element={withLayout(route.component, route.user)}
+              element={<LayoutWrapper component={route.component} user={route.user} />}
             />
           ))}
         </Routes>

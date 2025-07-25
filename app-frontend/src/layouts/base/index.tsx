@@ -1,9 +1,10 @@
-const BaseTemplate: React.FC = () => {
+import Header from "../../components/Header";
 
+const BaseTemplate: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     return (
-        <div>
-            <h1>Base Layout</h1>
-            <p>This is the base layout of the application.</p>
+        <div className="min-h-screen flex flex-col w-full">
+            <Header />
+            {children}
         </div>
     );
 }
