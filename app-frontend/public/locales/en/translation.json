@@ -1,0 +1,20 @@
+{
+    "appRouter": {
+        "home": "Home",
+        "services": "Services"
+    },
+    "header": {
+        "login": "Login",
+        "signup": "Sign Up",
+        "searchPlaceholder": "Search for services or types of services"
+    },
+    "language": {
+        "en": "English",
+        "pt": "Portuguese"
+    },
+    "changeLanguage": {
+        "change": "Change Language",
+        "active": "Active Language",
+        "available": "Available Languages"
+    }
+}

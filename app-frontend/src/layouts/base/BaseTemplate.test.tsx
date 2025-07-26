@@ -1,15 +1,18 @@
-import { screen } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
+
+jest.mock('../../components/Header', () => () => <div data-testid="mock_header">Header Mock</div>);
+
 import BaseTemplate from ".";
-import { renderWithProviders } from '../../../utils/test-utils';
 
 describe("BaseTemplate component", () => {
   it('renders the heading and paragraph correctly', () => {
-    renderWithProviders(
+    render(
       <BaseTemplate>
         <div>Child Content</div>
       </BaseTemplate>
     );
 
     expect(screen.getByText('Child Content')).toBeInTheDocument();
+    expect(screen.getByTestId('mock_header')).toBeInTheDocument();
   });
 });

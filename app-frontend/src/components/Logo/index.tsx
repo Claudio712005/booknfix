@@ -11,9 +11,12 @@ interface LogoProps {
 }
 
 const sizeClasses: Record<Size, string> = {
-  sm: "w-8 h-8",
-  md: "w-10 h-10",
-  lg: "w-20 h-20",
+  sm: "w-8",
+  md: "w-10",
+  lg: "w-20",
+  xl: "w-24",
+  "2xl": "w-32",
+  "3xl": "w-40",
 };
 
 const Logo: React.FC<LogoProps> = ({
@@ -26,7 +29,7 @@ const Logo: React.FC<LogoProps> = ({
   const dimensions = sizeClasses[size] || sizeClasses["md"];
 
   return (
-    <a href={link} aria-label={ariaLabel} className={`inline-block ${className}`}>
+    <a href={link} aria-label={ariaLabel} className={`flex items-center ${className}`}>
       <img
         src={logo}
         alt={alt}

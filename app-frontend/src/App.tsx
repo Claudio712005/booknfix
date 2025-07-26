@@ -6,11 +6,19 @@ import 'primereact/resources/themes/lara-light-blue/theme.css';
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
 import './App.css'
+import { useRouteResolver } from "./hooks/useRouteResolver";
+
+function RouteWatcher() {
+  useRouteResolver();
+  return null;
+}
 
 function App() {
+
   return (
     <>
       <Router>
+        <RouteWatcher />
         <Routes>
           {appRouter.map((route) => (
             <Route
