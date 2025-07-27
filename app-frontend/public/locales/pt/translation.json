@@ -1,7 +1,8 @@
 {
     "appRouter": {
         "home": "Início",
-        "services": "Serviços"
+        "services": "Serviços",
+        "auth": "Autenticação"
     },
     "header": {
         "login": "Entrar",
@@ -10,11 +11,37 @@
     },
     "language": {
         "en": "Inglês",
-        "pt": "Português"
+        "pt": "Português",
+        "fr": "Francês",
+        "es": "Espanhol"
     },
     "changeLanguage": {
         "change": "Mudar Idioma",
         "active": "Idioma Ativo",
         "available": "Idiomas Disponíveis"
+    },
+    "auth": {
+        "title": "Bem-vindo à",
+        "description": "Digite seu e-mail para iniciar. Vamos verificar se você já tem conta e te redirecionar automaticamente.",
+        "emailPlaceholder": "Seu e-mail",
+        "continueWithEmail": "Continuar com e-mail",
+        "orContinueWith": "ou entre com",
+        "google": "Entrar com Google",
+        "facebook": "Entrar com Facebook",
+        "agreementPrefix": "Ao continuar, você concorda com nossos",
+        "terms": "Termos de uso",
+        "privacy": "Política de privacidade",
+        "and": "e",
+        "codeDescription": "Insira o código que foi enviado para o seu e-mail para que possamos verificá-lo e prosseguir.",
+        "verifyCode": "Confirmar Código",
+        "didntReceive": "Não recebeu o código?",
+        "resendCode": "Reenviar Código"
+    },
+    "landing": {
+        "bannerText": "Encontre e agende serviços de confiança perto de você. Desde manutenção até cuidados pessoais — tudo em um só lugar.",
+        "registerYourService": "Cadastre seu serviço",
+        "viewDetails": "Ver detalhes",
+        "popularServiceCategories": "Categorias de serviços mais populares",
+        "popularServicesNearYou": "Serviços mais populares próximos a você"
     }
 }

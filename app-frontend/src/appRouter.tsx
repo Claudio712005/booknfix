@@ -1,5 +1,6 @@
-import LandingPage from "./pages/landing";
+import LandingPage from "./pages/Landing";
 import { RiHome6Fill } from "react-icons/ri";
+import Auth from "./pages/Auth";
 
 type AppRouter = {
     path: string;
@@ -43,6 +44,20 @@ export const appRouter: AppRouter[] = [
             name: "appRouter.home",
             icon: <RiHome6Fill />,
             iconClass: "pi pi-home"
+        }
+    },
+    {
+        path: "/auth",
+        component: Auth,
+        hasAuth: false,
+        user: "any",
+        showInHeader: false,
+        showInFooter: true,
+        breadcrumb: {
+            parent: "",
+            name: "appRouter.auth",
+            icon: <RiHome6Fill />,
+            iconClass: "pi pi-user"
         }
     }
 ]

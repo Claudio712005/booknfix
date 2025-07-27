@@ -1,16 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import Logo from "../Logo";
 import { appRouter } from "@/appRouter";
 import { Button } from "primereact/button";
-import { useTranslation } from "react-i18next";
 import ChangeLanguage from "../ChangeLanguage";
 import { Divider } from "primereact/divider";
 import { InputText } from "primereact/inputtext";
 import { Sidebar } from "primereact/sidebar";
+import { useHeader } from "./useHeader";
 
 const Header: React.FC = () => {
-    const { t } = useTranslation();
-    const [sidebarVisible, setSidebarVisible] = useState(false);
+
+    const {isVisible, setIsVisible, t, handleSignUpClick, navigate} = useHeader();
 
     return (
         <>
@@ -19,7 +19,7 @@ const Header: React.FC = () => {
                     <Button
                         icon="pi pi-bars"
                         severity="warning"
-                        onClick={() => setSidebarVisible(true)}
+                        onClick={() => setIsVisible(true)}
                         className="w-10 h-10 p-0 flex justify-center items-center md:hidden"
                     />
                     <Logo size="lg" />
@@ -44,7 +44,9 @@ const Header: React.FC = () => {
                                     size="small"
                                     severity="warning"
                                     text
-                                    onClick={() => { }}
+                                    onClick={() => {
+                                        navigate(route.path);
+                                    }}
                                 />
                             ) : null
                         )}
@@ -67,7 +69,7 @@ const Header: React.FC = () => {
                     <Button
                         label={t("header.signup")}
                         size="small"
-                        onClick={() => { }}
+                        onClick={handleSignUpClick}
                         severity="warning"
                         icon="pi pi-user-plus"
                     />
@@ -75,8 +77,8 @@ const Header: React.FC = () => {
             </header>
 
             <Sidebar
-                visible={sidebarVisible}
-                onHide={() => setSidebarVisible(false)}
+                visible={isVisible}
+                onHide={() => setIsVisible(false)}
                 position="left"
                 className="w-80"
             >
@@ -104,7 +106,10 @@ const Header: React.FC = () => {
                                     icon={route.breadcrumb.iconClass}
                                     size="small"
                                     severity="warning"
-                                    onClick={() => setSidebarVisible(false)}
+                                    onClick={() => {
+                                        setIsVisible(false);
+                                        navigate(route.path);
+                                    }}
                                 />
                             ) : null
                         )}
@@ -124,7 +129,10 @@ const Header: React.FC = () => {
                         <Button
                             label={t("header.signup")}
                             size="small"
-                            onClick={() => { }}
+                            onClick={() => {
+                                handleSignUpClick();
+                                setIsVisible(false);
+                            }}
                             severity="warning"
                             icon="pi pi-user-plus"
                         />

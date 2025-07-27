@@ -1,0 +1,47 @@
+{
+    "appRouter": {
+        "home": "Accueil",
+        "services": "Services",
+        "auth": "Authentification"
+    },
+    "header": {
+        "login": "Se connecter",
+        "signup": "S'inscrire",
+        "searchPlaceholder": "Rechercher des services ou des types de services"
+    },
+    "language": {
+        "en": "Anglais",
+        "pt": "Portugais",
+        "fr": "Français",
+        "es": "Espagnol"
+    },
+    "changeLanguage": {
+        "change": "Changer de langue",
+        "active": "Langue active",
+        "available": "Langues disponibles"
+    },
+    "auth": {
+        "title": "Bienvenue sur",
+        "description": "Entrez votre adresse e-mail pour commencer. Nous vérifierons si vous avez déjà un compte et vous redirigerons automatiquement.",
+        "emailPlaceholder": "Votre e-mail",
+        "continueWithEmail": "Continuer avec l'e-mail",
+        "orContinueWith": "ou continuez avec",
+        "google": "Se connecter avec Google",
+        "facebook": "Se connecter avec Facebook",
+        "agreementPrefix": "En continuant, vous acceptez nos",
+        "terms": "Conditions d'utilisation",
+        "privacy": "Politique de confidentialité",
+        "and": "et",
+        "codeDescription": "Entrez le code qui a été envoyé à votre e-mail pour que nous puissions le vérifier et continuer.",
+        "verifyCode": "Confirmer le code",
+        "didntReceive": "Vous n'avez pas reçu le code ?",
+        "resendCode": "Renvoyer le code"
+    },
+        "landing": {
+        "bannerText": "Trouvez et réservez des services de confiance près de chez vous. De l'entretien aux soins personnels, tout est au même endroit.",
+        "registerYourService": "Enregistrez votre service",
+        "viewDetails": "Voir les détails",
+        "popularServiceCategories": "Catégories de services les plus populaires",
+        "popularServicesNearYou": "Services les plus populaires près de chez vous"
+    }
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../../assets/booknfix-logo.png";
 import { Size } from "@/types/common";
+import { Link } from "react-router";
 
 interface LogoProps {
   size?: Size;
@@ -29,14 +30,14 @@ const Logo: React.FC<LogoProps> = ({
   const dimensions = sizeClasses[size] || sizeClasses["md"];
 
   return (
-    <a href={link} aria-label={ariaLabel} className={`flex items-center ${className}`}>
+    <Link to={link} aria-label={ariaLabel} className={`flex items-center ${className}`}>
       <img
         src={logo}
         alt={alt}
         className={`object-contain ${dimensions}`}
         loading="lazy"
       />
-    </a>
+    </Link>
   );
 };
 

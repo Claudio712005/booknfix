@@ -1,7 +1,8 @@
 {
     "appRouter": {
         "home": "Home",
-        "services": "Services"
+        "services": "Services",
+        "auth": "Authentication"
     },
     "header": {
         "login": "Login",
@@ -10,11 +11,37 @@
     },
     "language": {
         "en": "English",
-        "pt": "Portuguese"
+        "pt": "Portuguese",
+        "fr": "French",
+        "es": "Spanish"
     },
     "changeLanguage": {
         "change": "Change Language",
         "active": "Active Language",
         "available": "Available Languages"
+    },
+    "auth": {
+        "title": "Welcome to",
+        "description": "Enter your email to start. We'll check if you already have an account and redirect you automatically.",
+        "emailPlaceholder": "Your email",
+        "continueWithEmail": "Continue with email",
+        "orContinueWith": "or continue with",
+        "google": "Sign in with Google",
+        "facebook": "Sign in with Facebook",
+        "agreementPrefix": "By continuing, you agree to our",
+        "terms": "Terms of Use",
+        "privacy": "Privacy Policy",
+        "and": "and",
+        "codeDescription": "Enter the code that was sent to your email so we can verify it and proceed.",
+        "verifyCode": "Verify Code",
+        "didntReceive": "Didn't receive the code?",
+        "resendCode": "Resend Code"
+    },
+    "landing": {
+        "bannerText": "Find and book trusted services near you. From maintenance to personal care — everything in one place.",
+        "registerYourService": "Register your service",
+        "viewDetails": "View details",
+        "popularServiceCategories": "Most popular service categories",
+        "popularServicesNearYou": "Most popular services near you"
     }
 }

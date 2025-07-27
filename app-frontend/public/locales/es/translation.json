@@ -1,0 +1,47 @@
+{
+    "appRouter": {
+        "home": "Inicio",
+        "services": "Servicios",
+        "auth": "Autenticación"
+    },
+    "header": {
+        "login": "Iniciar sesión",
+        "signup": "Registrarse",
+        "searchPlaceholder": "Buscar servicios o tipos de servicios"
+    },
+    "language": {
+        "en": "Inglés",
+        "pt": "Portugués",
+        "fr": "Francés",
+        "es": "Español"
+    },
+    "changeLanguage": {
+        "change": "Cambiar idioma",
+        "active": "Idioma activo",
+        "available": "Idiomas disponibles"
+    },
+    "auth": {
+        "title": "Bienvenido a",
+        "description": "Ingresa tu correo electrónico para comenzar. Verificaremos si ya tienes una cuenta y te redirigiremos automáticamente.",
+        "emailPlaceholder": "Tu correo electrónico",
+        "continueWithEmail": "Continuar con correo electrónico",
+        "orContinueWith": "o continuar con",
+        "google": "Iniciar con Google",
+        "facebook": "Iniciar con Facebook",
+        "agreementPrefix": "Al continuar, aceptas nuestros",
+        "terms": "Términos de uso",
+        "privacy": "Política de privacidad",
+        "and": "y",
+        "codeDescription": "Ingresa el código que se envió a tu correo electrónico para que podamos verificarlo y continuar.",
+        "verifyCode": "Confirmar código",
+        "didntReceive": "¿No recibiste el código?",
+        "resendCode": "Reenviar código"
+    },
+        "landing": {
+        "bannerText": "Encuentra y agenda servicios de confianza cerca de ti. Desde mantenimiento hasta cuidados personales, todo en un solo lugar.",
+        "registerYourService": "Registra tu servicio",
+        "viewDetails": "Ver detalles",
+        "popularServiceCategories": "Categorías de servicios más populares",
+        "popularServicesNearYou": "Servicios más populares cerca de ti"
+    }
+}
