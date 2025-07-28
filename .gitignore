@@ -23,3 +23,11 @@
 *.pem
 
 *.env
+
+*.mvn
+*target
+
+*.idea
+*.iws
+*.iml
+*.ipr
