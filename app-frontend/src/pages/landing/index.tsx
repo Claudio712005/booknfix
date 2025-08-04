@@ -3,9 +3,9 @@ import img_background from "../../assets/background.jpg";
 import { Button } from "primereact/button";
 import { useTranslation } from "react-i18next";
 import { Divider } from "primereact/divider";
-import { Chip } from "primereact/chip";
 import { Carousel } from "primereact/carousel";
 import Footer from "@/components/Footer";
+import { CustomChip } from "@/components/CustomChip";
 
 const LandingPage: React.FC = () => {
     const { t } = useTranslation();
@@ -68,23 +68,23 @@ const LandingPage: React.FC = () => {
                             {t("landing.popularServiceCategories")}
                         </h1>
                         <div className="flex flex-wrap gap-2 mt-2 w-full justify-center">
-                            <Chip label="Beleza" icon="pi pi-star" />
-                            <Chip label="Manutenção" icon="pi pi-wrench" />
-                            <Chip label="Limpeza" icon="pi pi-broom" />
-                            <Chip label="Cuidados pessoais" icon="pi pi-heart" />
-                            <Chip label="Reparos" icon="pi pi-cog" />
-                            <Chip label="Serviços domésticos" icon="pi pi-home" />
-                            <Chip label="Jardinagem" icon="pi pi-leaf" />
-                            <Chip label="Tecnologia" icon="pi pi-desktop" />
-                            <Chip label="Saúde" icon="pi pi-plus" />
-                            <Chip label="Eventos" icon="pi pi-calendar" />
-                            <Chip label="Educação" icon="pi pi-book" />
-                            <Chip label="Transporte" icon="pi pi-car" />
-                            <Chip label="Consultoria" icon="pi pi-briefcase" />
-                            <Chip label="Fotografia" icon="pi pi-camera" />
-                            <Chip label="Alimentação" icon="pi pi-food" />
-                            <Chip label="Fitness" icon="pi pi-gym" />
-                            <Chip label="Animais de estimação" icon="pi pi-paw" />
+                            <CustomChip label="Beleza" icon="pi pi-star" onClick={() => {}} />
+                            <CustomChip label="Manutenção" icon="pi pi-wrench" />
+                            <CustomChip label="Limpeza" icon="pi pi-broom" />
+                            <CustomChip label="Cuidados pessoais" icon="pi pi-heart" />
+                            <CustomChip label="Reparos" icon="pi pi-cog" />
+                            <CustomChip label="Serviços domésticos" icon="pi pi-home" />
+                            <CustomChip label="Jardinagem" icon="pi pi-leaf" />
+                            <CustomChip label="Tecnologia" icon="pi pi-desktop" />
+                            <CustomChip label="Saúde" icon="pi pi-plus" />
+                            <CustomChip label="Eventos" icon="pi pi-calendar" />
+                            <CustomChip label="Educação" icon="pi pi-book" />
+                            <CustomChip label="Transporte" icon="pi pi-car" />
+                            <CustomChip label="Consultoria" icon="pi pi-briefcase" />
+                            <CustomChip label="Fotografia" icon="pi pi-camera" />
+                            <CustomChip label="Alimentação" icon="pi pi-food" />
+                            <CustomChip label="Fitness" icon="pi pi-gym" />
+                            <CustomChip label="Animais de estimação" icon="pi pi-paw" />
                         </div>
                     </div>
 

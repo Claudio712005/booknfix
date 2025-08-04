@@ -5,14 +5,9 @@ import { useTranslation } from "react-i18next";
 
 const ConfirmEmail: React.FC = () => {
     const { t } = useTranslation();
-    
+
     return (
-        <div className="w-full max-w-md mx-auto mt-24 px-4 flex flex-col items-center">
-            <h1 className="text-2xl font-semibold text-center mb-2">
-                {t("auth.title")} <span
-                    className="text-orange-500 font-bold"
-                >booknfix</span>
-            </h1>
+        <>
             <p className="text-sm text-gray-500 text-center mb-6">
                 {t("auth.description")}
             </p>
@@ -58,7 +53,7 @@ const ConfirmEmail: React.FC = () => {
                     {t("auth.privacy")}
                 </a>.
             </p>
-        </div>
+        </>
     );
 };
 

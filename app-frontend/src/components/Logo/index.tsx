@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../../assets/booknfix-logo.png";
-import { Size } from "@/types/common";
+import { Size } from "@/@types/common";
 import { Link } from "react-router";
 
 interface LogoProps {

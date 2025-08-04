@@ -1,4 +1,4 @@
-import { Langs } from "@/types/common";
+import { Langs } from "@/@types/common";
 
 export interface Language {
     code: Langs;

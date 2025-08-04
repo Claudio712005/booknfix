@@ -1,5 +1,5 @@
 import type React from "react";
-import type { UserType } from "../types/user-type";
+import type { UserType } from "../@types/user-type";
 import BaseTemplate from "./base";
 import CommonLayout from "./common";
 
