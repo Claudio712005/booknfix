@@ -48,3 +48,13 @@ jobs:
         run: |
           cd services/auth-svc
           mvn clean verify
+
+      - name: Build and Test microservice (registry-svc)
+        run: |
+          cd services/registry-svc
+          mvn clean verify
+
+      - name: Build and Test microservice (gateway-svc)
+        run: |
+          cd services/gateway-svc
+          mvn clean verify
