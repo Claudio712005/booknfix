@@ -16,6 +16,8 @@ func main() {
 
 	config.InitializeKafkaConfig()
 
+	config.ListeningEvents()
+
 	log.Println("Message dispatcher started.")
 
 	http.ListenAndServe(os.Getenv("HTTP_PORT"), nil)
