@@ -6,6 +6,7 @@ import (
 	"os"
 
 	"github.com/Claudio712005/booknfix/workers/message-dispatcher/internal/consumers"
+	"github.com/Claudio712005/booknfix/workers/message-dispatcher/internal/router"
 	"github.com/segmentio/kafka-go"
 )
 
@@ -46,7 +47,8 @@ func ListeningEvents(){
 		for _, topic := range getTopics(){
 			kfkConsumer := consumers.NewKafkaConsumer(topic, "message-dispatcher-group")
 			kfkConsumer.Start(ctx, func(message kafka.Message) error {
-				log.Printf("Message received on topic %s: %s", topic, string(message.Value))
+				log.Printf("Message received on topic %s: %s", topic, string(message.Key))
+				router.RouteMessage(message)
 				return nil
 			})
 		}

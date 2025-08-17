@@ -7,8 +7,9 @@ import java.util.Map;
 public class PathConfig {
 
   public static final Map<String, HttpMethod> PUBLIC_PATHS = Map.ofEntries(
-          Map.entry("/users/auth/login", HttpMethod.POST),
-          Map.entry("/users/common/register", HttpMethod.POST),
+          Map.entry("/api/users/auth/login", HttpMethod.POST),
+          Map.entry("/api/users/common/register", HttpMethod.POST),
+          Map.entry("/api/verification-codes/email-confirmation", HttpMethod.POST),
           Map.entry("/error", HttpMethod.GET)
   );
 

@@ -12,6 +12,7 @@ import (
 // KafkaConsumer is a struct that represents a Kafka consumer
 type KafkaConsumer struct {
 	reader *kafka.Reader
+	
 }
 
 // NewKafkaConsumer creates a new Kafka consumer

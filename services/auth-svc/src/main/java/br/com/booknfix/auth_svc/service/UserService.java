@@ -25,6 +25,11 @@ public class UserService {
   private final PasswordEncoder passwordEncoder;
   private final JWTUtil jwtUtil;
 
+  public UserEntity findByEmail(String email) {
+    return userRepository.findByEmail(email).orElseThrow(() -> new ResponseStatusException(
+        HttpStatus.NOT_FOUND, "Usuário não encontrado"));
+  }
+
   public ResponseEntity<AuthResponseDTO> login(AuthRequestDTO requestDTO) throws ResponseStatusException{
     if(requestDTO == null) {
       throw new ResponseStatusException(
