@@ -1,0 +1,17 @@
+services:
+  eureka-server:
+    networks:
+      - microservices-network
+    image: clau2005/registry-svc:latest
+    container_name: eureka-server
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - REGISTRY_PORT=8761
+    ports:
+      - "8761:8761"
+
+networks:
+  microservices-network:
+    external: true
